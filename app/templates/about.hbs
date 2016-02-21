@@ -1,0 +1,9 @@
+{{outlet}}
+<h2> this is my about page </h2>
+<div> this is the div of the about page. the "about" page was generated with ember command:</div>
+<div> ember generate route about </div>
+
+{{#each model as |test|}}
+  <div> id: {{test.id}}</div>
+  <div> body: {{test.body}}</div>
+{{/each}}
