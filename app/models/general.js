@@ -4,5 +4,5 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   age: DS.attr('string'),
   weight: DS.attr('string'),
-  species: DS.attri('string')
+  species: DS.attr('string')
 });
