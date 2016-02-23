@@ -1,17 +1,25 @@
-<div class="container-fluid">
-<div class="row">
-  <div class="col-md-4 col-md-offset-4"><h2 id="title">Welcome to place holder</h2></div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <div class="navbar">
-      <button class="btn btn-default">{{#link-to "generalInformation"}}General Information{{/link-to}}</button>
-      <button class="btn btn-default">{{#link-to "medicalInformation"}}Medical Information{{/link-to}}</button>
-      <button class="btn btn-default">{{#link-to "about"}}about{{/link-to}}</button>
-      <button class="btn btn-default">{{#link-to "contact"}}contact{{/link-to}}</button>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="navbar-text">
+        PetBox
+      </p>
+    </div><!-- /.navbar-header -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          {{#link-to "generalInformation"}}General Information{{/link-to}}
+        </li>
+        <li>{{#link-to "medicalInformation"}}Medical Information{{/link-to}}</li>
+        <li>{{#link-to "about"}}about{{/link-to}}</li>
+        <li>{{#link-to "contact"}}contact{{/link-to}}</li>
+      </ul>
     </div>
-  </div>
-</div>
-
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4"><h2 id="title">Welcome to PetBox</h2></div>
+    </div>
 {{outlet}}
-</div>
+</div><!-- /.container-fluid -->
